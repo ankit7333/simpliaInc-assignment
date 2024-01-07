@@ -1,0 +1,61 @@
+@mixin for-mobile-320{
+    @media (max-width:320px){
+        @content;
+    }
+}
+@mixin for-mobile-360{
+    @media (max-width:360px){
+        @content;
+    }
+}
+@mixin for-mobile{
+    @media (max-width:767px){
+        @content;
+    }
+}
+@mixin for-ipad{
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+        @content;
+    }
+}
+@mixin for-ipad-landscape{
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1){
+        @content;
+    }
+}
+@mixin for-ipad-portrait{
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1){
+        @content;
+    }
+}
+@mixin for-desktop{
+    @media (min-width:1025px){
+        @content;
+    }
+}
+@mixin position($position, $top:null, $right:null, $bottom:null, $left:null) {
+    position:$position;
+    bottom:$bottom;
+    right:$right;
+    left:$left;
+    top:$top;
+}
+@mixin transition($transition...){
+    -webkit-transition:$transition;
+    -moz-transition:$transition;
+    -o-transition:$transition;
+    transition:$transition;
+}
+@mixin border-radius($top-left:null, $top-right:null, $bottom-right:null, $bottom-left:null){
+    -webkit-border-radius:$top-left $top-right $bottom-right $bottom-left;
+    -moz-border-radius:$top-left $top-right $bottom-right $bottom-left;
+    -ms-border-radius:$top-left $top-right $bottom-right $bottom-left;
+    border-radius:$top-left $top-right $bottom-right $bottom-left;  
+}
+@mixin fadeInUp{
+    -webkit-animation:fadeInUp 0.5s ease forwards;
+    -moz-animation:fadeInUp 0.5s ease forwards;
+    -ms-animation:fadeInUp 0.5s ease forwards;
+    -o-animation:fadeInUp 0.5s ease forwards;
+    animation:fadeInUp 0.5s ease forwards;
+}

@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/global.scss';
+import Header from './component/Header'
+import Footer from './component/Footer'
+import Professionaly from './component/Professionaly'
+import Transport from './component/Transport'
+import Professionalride from './component/Professionalride'
+import Bookexclusive from './component/Bookexclusive'
+import Happytohear from './component/Happytohear'
+import Bigevent from './component/Bigevent'
+import Atlimox from './component/Atlimox'
+import Our from './component/Our'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Professionaly />
+      <Transport />
+      <Professionalride />
+      <Bookexclusive />
+      <Our />
+      <Bigevent />
+      <Atlimox />
+      <Happytohear />
+      <Footer />
     </div>
   );
 }
