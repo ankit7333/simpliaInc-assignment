@@ -9,16 +9,24 @@ export default function Atlimox() {
                 <p>Not only customers from Europe but from all over the world trust LimoX service</p>
                 <ul>
                     <li>
-                        <a className={`${styles.logo} ${styles.volkswagen}`} href='/' />
+                        <a href='/'>
+                            <span className={`${styles.logo} ${styles.volkswagen}`} />
+                        </a>
                     </li>
                     <li>
-                        <a className={`${styles.logo} ${styles.bmw}`} href='/' />
+                        <a href='/'>
+                            <span className={`${styles.logo} ${styles.bmw}`} />
+                        </a>
                     </li>
                     <li>
-                        <a className={`${styles.logo} ${styles.audi}`} href='/' />
+                        <a href='/'>
+                            <span className={`${styles.logo} ${styles.audi}`} />
+                        </a>
                     </li>
                     <li>
-                        <a className={`${styles.logo} ${styles.mercedes}`} href='/' />
+                        <a href='/'>
+                            <span className={`${styles.logo} ${styles.mercedes}`} />
+                        </a>
                     </li>
                 </ul>
             </div>
