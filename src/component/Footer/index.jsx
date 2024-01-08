@@ -25,11 +25,31 @@ export default function Footer() {
                     </li>
                     <li className={`${styles.social}`}>
                         <ul>
-                            <li><a className={`icon ${styles.social__icon} ${styles.facebook}`} href='/#' /></li>
-                            <li><a className={`icon ${styles.social__icon} ${styles.twitter}`} href='/#' /></li>
-                            <li><a className={`icon ${styles.social__icon} ${styles.linkedin}`} href='/#' /></li>
-                            <li><a className={`icon ${styles.social__icon} ${styles.whatsapp}`} href='/#' /></li>
-                            <li><a className={`icon ${styles.social__icon} ${styles.youtube}`} href='/#' /></li>
+                            <li>
+                                <a href='/#'>
+                                    <span className={`icon ${styles.social__icon} ${styles.facebook}`} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/#'>
+                                    <span className={`icon ${styles.social__icon} ${styles.twitter}`} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/#'>
+                                    <span className={`icon ${styles.social__icon} ${styles.linkedin}`} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/#'>
+                                    <span className={`icon ${styles.social__icon} ${styles.whatsapp}`} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/#'>
+                                    <span className={`icon ${styles.social__icon} ${styles.youtube}`} />
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
